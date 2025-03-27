@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "cats_chal",
   "version": "1.0.0",
   "main": "script.js",
@@ -18,4 +19,9 @@
   },
   "homepage": "https://github.com/ssatarino/af-frontend-challenge#readme",
   "description": ""
+=======
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+>>>>>>> 012acb8f2b63310618e93627a1155e0753797c9b
 }
