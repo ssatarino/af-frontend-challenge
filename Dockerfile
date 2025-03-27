@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
+# Install the `serve` package globally
+RUN npm install -g serve
+
 # Step 5: Copy the rest of the application files
 COPY . .
 
@@ -17,4 +20,4 @@ COPY . .
 EXPOSE 8080
 
 # Step 7: Run the app
-CMD ["npm", "start"]
+CMD ["serve", "-s", "."]
