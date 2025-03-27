@@ -1,0 +1,29 @@
+button {
+    background-color: #52a43c;
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+  
+  button:hover {
+    background-color: #53a43c5f; 
+  }
+
+  h1 {
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+  }
+  
