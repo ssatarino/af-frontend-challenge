@@ -12,7 +12,7 @@ Make sure that each of the following are installed on your system:
 
 ## Installation
 
-### 1. Clone the repo
+### 1. Clone the repo + Build
 
 ```bash
 git clone https://github.com/ssatarino/af-frontend-challenge.git
