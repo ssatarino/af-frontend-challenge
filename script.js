@@ -1,12 +1,12 @@
 document.getElementById('serve-cat-button').addEventListener('click', fetchCatImage);
 
 function fetchCatImage() {
-  const url = 'https://cataas.com/cat?json=true';  // cataas API endpoint
+  const url = 'https://cataas.com/cat?json=true';  
 
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      const imageUrl = data.url;  // Extract the image URL from the response
+      const imageUrl = data.url;  
       displayCatImage(imageUrl);
     })
     .catch(error => {
@@ -16,9 +16,9 @@ function fetchCatImage() {
 
 function displayCatImage(imageUrl) {
     const catPictureContainer = document.getElementById('cat-picture-container');
-    catPictureContainer.innerHTML = '';  // Clear any existing image
+    catPictureContainer.innerHTML = '';  
     const imgElement = document.createElement('img');
-    imgElement.src = imageUrl;  // Use the image URL directly
+    imgElement.src = imageUrl;  
     imgElement.alt = 'A cute cat picture';
     catPictureContainer.appendChild(imgElement);
   }
