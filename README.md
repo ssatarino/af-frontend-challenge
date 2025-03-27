@@ -12,7 +12,8 @@ Make sure that each of the following are installed on your system:
 
 ## Installation
 
-### 1. Clone the repo + Build
+### 1. Clone the repo + Build 
+#### Please note port 8080 we use within the Docker container to run
 
 ```bash
 git clone https://github.com/ssatarino/af-frontend-challenge.git
