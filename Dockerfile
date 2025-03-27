@@ -1,23 +1,22 @@
-# use image
 FROM node:18
 
-# set directory
+# Set directory
 WORKDIR /app
 
-# copy package.json and install dependencies
+# Copy package.json and install dependencies
 COPY package*.json ./
 
-# install dependencies
+# Install dependencies
 RUN npm install
 
-# install `serve` globally
+# Install `serve` globally
 RUN npm install -g serve
 
-# copy  rest of the application files
+# Copy the rest of the application files
 COPY . .
 
-# port
+# Expose the port
 EXPOSE 8080
 
-# run the app with `serve` to serve the build
-CMD ["serve", "-s", "build", "-l", "8080"]
+# Serve from the root (or other folder if necessary)
+CMD ["serve", "-s", ".", "-l", "8080"]
